@@ -1,0 +1,53 @@
+\changetocdepth {4}
+\select@language {brazil}
+\select@language {brazil}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\contentsline {chapter}{Introdu\IeC {\c c}\IeC {\~a}o}{21}{chapter*.10}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {1}\MakeTextUppercase {Especificac\IeC {\~o}es}}{25}{chapter.1}
+\contentsline {section}{\numberline {1.1}Vis\IeC {\~a}o Empresarial}{25}{section.1.1}
+\contentsline {subsection}{\numberline {1.1.1}Monetiza\IeC {\c c}\IeC {\~a}o do projeto}{25}{subsection.1.1.1}
+\contentsline {section}{\numberline {1.2}Vis\IeC {\~a}o de informa\IeC {\c c}\IeC {\~a}o}{26}{section.1.2}
+\contentsline {subsection}{\numberline {1.2.1}Elementos de informa\IeC {\c c}\IeC {\~a}o do sistema}{26}{subsection.1.2.1}
+\contentsline {subsection}{\numberline {1.2.2}Manipula\IeC {\c c}\IeC {\~a}o de informa\IeC {\c c}\IeC {\~o}es}{26}{subsection.1.2.2}
+\contentsline {subsection}{\numberline {1.2.3}Fluxo de informa\IeC {\c c}\IeC {\~o}es}{26}{subsection.1.2.3}
+\contentsline {section}{\numberline {1.3}Vis\IeC {\~a}o Computacional}{26}{section.1.3}
+\contentsline {subsection}{\numberline {1.3.1}Requisitos}{26}{subsection.1.3.1}
+\contentsline {subsubsection}{\numberline {1.3.1.1}Requisitos funcionais}{26}{subsubsection.1.3.1.1}
+\contentsline {subsubsection}{\numberline {1.3.1.2}Requisitos n\IeC {\~a}o funcionais}{26}{subsubsection.1.3.1.2}
+\contentsline {section}{\numberline {1.4}Vis\IeC {\~a}o da Engenharia/Infraestrutura}{26}{section.1.4}
+\contentsline {subsection}{\numberline {1.4.1}Arquitetura do sistema}{26}{subsection.1.4.1}
+\contentsline {section}{\numberline {1.5}Vis\IeC {\~a}o Tecnol\IeC {\'o}gica}{26}{section.1.5}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {2}\MakeTextUppercase {Metodologia}}{27}{chapter.2}
+\contentsline {section}{\numberline {2.1}Planejamento}{27}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Trello}{27}{subsection.2.1.1}
+\contentsline {subparagraph}{Backlog}{27}{section*.16}
+\contentsline {subparagraph}{Sprint}{28}{section*.17}
+\contentsline {subparagraph}{Doing}{28}{section*.18}
+\contentsline {subparagraph}{To be verified}{28}{section*.19}
+\contentsline {subparagraph}{Done}{28}{section*.20}
+\contentsline {subparagraph}{Halt}{28}{section*.21}
+\contentsline {subsection}{\numberline {2.1.2}Cronograma}{28}{subsection.2.1.2}
+\contentsline {subsection}{\numberline {2.1.3}Requisitos}{29}{subsection.2.1.3}
+\contentsline {subsubsection}{\numberline {2.1.3.1}Requisitos Funcionais}{29}{subsubsection.2.1.3.1}
+\contentsline {paragraph}{\numberline {2.1.3.1.1}Requisitos de hardware}{29}{paragraph.2.1.3.1.1}
+\contentsline {paragraph}{\numberline {2.1.3.1.2}Requisitos de software}{29}{paragraph.2.1.3.1.2}
+\contentsline {subsubsection}{\numberline {2.1.3.2}Requisitos N\IeC {\~a}o-Funcionais}{29}{subsubsection.2.1.3.2}
+\contentsline {paragraph}{\numberline {2.1.3.2.1}Conclus\IeC {\~a}o}{29}{paragraph.2.1.3.2.1}
+\contentsline {section}{\numberline {2.2}Software}{29}{section.2.2}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase {Execu\IeC {\c c}\IeC {\~a}o}}{31}{chapter.3}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {Conclus\IeC {\~a}o}}{35}{chapter.4}
+\vspace {\cftbeforechapterskip }
+\vspace {\cftbeforechapterskip }
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\contentsline {chapter}{\uppercase {Refer\^encias}}{37}{section*.26}
+\vspace {\cftbeforechapterskip }

@@ -1,0 +1,380 @@
+% ------------------------------------------------------------------------
+% ------------------------------------------------------------------------
+% Teleoperação de braço robótico por rastreamento de movimentos e imersão visual - Trabalho de Conclusão de Curso da Escola Politécnica da USP
+% Integrante: Daniel Noriaki Kurosawa
+% ------------------------------------------------------------------------ 
+% ------------------------------------------------------------------------
+
+\documentclass[
+	12pt,				% tamanho da fonte
+	openright,			% capítulos começam em pág ímpar
+	twoside,			% para impressão em recto e verso. Oposto a oneside
+	a4paper,			% tamanho do papel. 
+	hyphens,			% url longa nas referencias
+	english,			% idioma adicional para hifenização
+	brazil				% o último idioma é o principal do documento
+]{abntex2}
+
+% ---
+%  PACOTES
+% ---
+
+% Pacotes básicos 
+\usepackage{lmodern}			% Usa a fonte Latin Modern			
+\usepackage[T1]{fontenc}		% Selecao de codigos de fonte.
+\usepackage[utf8]{inputenc}		% Conversão automática dos acentos
+\usepackage{lastpage}			% Usado pela Ficha catalográfica
+\usepackage{indentfirst}		% Indenta o primeiro parágrafo de cada seção.
+\usepackage{color}				% Controle das cores
+\usepackage{amssymb}			% Less than or equal to
+\usepackage{tikz}				% desenhos de graficos aux
+\usepackage{pgfplots}			% desenhos de gráficos
+\usepackage{graphicx}			% Inclusão de gráficos
+\usepackage{subcaption}			% Subfigure
+\usepackage{float}				% Gráficos
+\usepackage{gensymb}			% degree
+\usepackage{microtype} 			% para melhorias de justificação
+\usepackage{lipsum}				% para geração de dummy text
+\usepackage{listings}			% para listagem de código %
+\usepackage{amsmath}			% para construção de sistemas lineares%
+
+
+% Pacotes de citações
+\usepackage[brazilian,hyperpageref]{backref}	 % Paginas com as citações
+\usepackage[alf,abnt-url-package=url]{abntex2cite}	% Citações padrão ABNT
+
+% --- 
+% CONFIGURAÇÕES DE PACOTES
+% --- 
+
+% ---
+% Configurações do pacote 
+\newenvironment{spmatrix}[1]{
+	\def\mysubscript{#1}\mathop\bgroup\begin{pmatrix}
+	}
+{\end{pmatrix}\egroup_{\textstyle\mathstrut\mysubscript}}
+% ---
+
+% ---
+% Configurações do pacote PGFPLOT
+\pgfplotsset{compat=1.14}
+\usetikzlibrary{patterns}
+\usepgfplotslibrary{fillbetween}
+\newcommand{\plotsin}[2]{\begin{axis}[
+		xmin=0, xmax=25,
+		ymin=-2, ymax=2,
+		axis lines=middle,
+		%xticklabels={,,},
+		%ytick={#1},	
+		%yticklabels={#2},
+		ylabel near ticks,
+		ylabel style={yshift=-0.5cm},
+		xlabel shift = 2 pt,
+		xlabel={[$t$]},
+		ylabel={[$V$]}
+		]}
+% ---
+% Configurações do pacote float
+\newfloat{chart}{tbhp}{loc} %section
+\floatname{chart}{Gráfico}
+\floatstyle{plaintop}
+\restylefloat{chart}
+\newcommand{\listofcharts}{\listof{chart}{Lista de Gráficos}}
+% ---
+% Configurações do pacote backref
+\renewcommand{\backrefpagesname}{Citado na(s) página(s):~}
+\renewcommand{\backref}{}
+\renewcommand*{\backrefalt}[4]{
+	\ifcase #1 %
+	Nenhuma citação no texto.%
+	\or
+	Citado na página #2.%
+	\else
+	Citado #1 vezes nas páginas #2.%
+	\fi}%
+% ---
+
+% ---
+% Informações de dados para CAPA e FOLHA DE ROSTO
+% ---
+\titulo{Teleoperação de braço robótico por rastreamento de movimentos e imersão visual}
+\autor{Daniel Noriaki Kurosawa}
+\local{São Paulo}
+\data{2016}
+\instituicao{Universidade de São Paulo -  USP \par
+			Escola Politécnica \par	
+			Engenharia Elétrica com ênfase em Automação e Controle}
+\tipotrabalho{Trabalho de Conclusão de Curso}
+\preambulo{Trabalho de Formatura apresentado ao Departamento de Engenharia de Telecomunicações e Controle da Escola Politécnica da Universidade de São Paulo para obtenção do Diploma de Engenheiro}
+% ---
+
+% ---
+% Configurações de aparência do PDF final
+\definecolor{blue}{RGB}{41,5,195} % cor azul
+
+% informações do PDF
+\makeatletter
+\hypersetup{
+	%pagebackref=true,
+	pdftitle={\@title}, 
+	pdfauthor={\@author},
+	pdfsubject={\imprimirpreambulo},
+	pdfcreator={LaTeX with abnTeX2},
+	pdfkeywords={abnt}{latex}{abntex}{abntex2}{trabalho acadêmico}, 
+	colorlinks=true,       		% false: boxed links; true: colored links
+	linkcolor=blue,          	% color of internal links
+	citecolor=blue,        		% color of links to bibliography
+	filecolor=magenta,      		% color of file links
+	urlcolor=blue,
+	bookmarksdepth=4
+}
+\makeatother
+% --- 
+
+% --- 
+% Espaçamentos entre linhas e parágrafos 
+% --- 
+\setlength{\parindent}{1.3cm} % O tamanho do parágrafo
+\setlength{\parskip}{0.2cm}  % espacamento entre um paragrafo e outro
+
+% ---
+% compila o indice
+% ---
+\makeindex
+% ---
+
+% ----
+% Início do documento
+% ----
+\begin{document}
+	
+	% Seleciona o idioma do documento
+	\selectlanguage{brazil}
+	
+	% Retira espaço extra obsoleto entre as frases.
+	\frenchspacing 
+	
+	% ----------------------------------------------------------
+	% ELEMENTOS PRÉ-TEXTUAIS
+	% ----------------------------------------------------------
+	% \pretextual
+	
+	% ---
+	% Capa
+	% ---
+	\imprimircapa
+	% ---
+	
+	% ---
+	% Folha de rosto
+	% ---
+	\imprimirfolhaderosto*
+	% ---
+	
+	% ---
+	% Ficha Catalográfica
+	% Quando receber pdf da biblioteca, descomentar linhas abaixo
+	% ---
+	\include{ficha-catalografica}
+	% ---
+	
+	% \begin{fichacatalografica}
+	%     \includepdf{fig_ficha_catalografica.pdf}
+	% \end{fichacatalografica}
+
+	% ---
+	% TODO APROVACAO
+	% Quando receber pdf com assinaturas, descomentar linha abaixo
+	% ---
+	% \includepdf{folhadeaprovacao_final.pdf}
+	%
+	
+	% ---
+	% Agradecimentos
+	% ---
+	\begin{agradecimentos}
+		Agradecimentos aqui.	
+	\end{agradecimentos}
+	% ---
+	
+	% ---
+	% Epígrafe
+	% ---
+	\begin{epigrafe}
+		\vspace*{\fill}
+		\begin{flushright}
+			\textit{``In a dark place we find ourselves,\\
+				and a little more knowledge	lights our way.\\
+				(Yoda, Episode 3: Revenge of the Sith)}
+		\end{flushright}
+	\end{epigrafe}
+	% ---
+	
+	% ---
+	% RESUMOS
+	% ---
+	\include{arm-resumos}
+	% ---
+	
+	% ---
+	% inserir lista de ilustrações
+	% ---
+	\pdfbookmark[0]{\listfigurename}{lof}
+	\listoffigures*
+	\cleardoublepage
+	% ---
+	
+	% ---
+	% inserir lista de tabelas
+	% ---
+	\pdfbookmark[0]{\listtablename}{lot}
+	\listoftables*
+	\cleardoublepage
+	% ---
+	
+	% ---
+	% inserir lista de gráficos
+	% ---
+	\pdfbookmark[0]{\listtablename}{lot}
+	\listofcharts
+	\cleardoublepage
+	% ---
+	
+	% ---
+	% inserir lista de abreviaturas e siglas
+	% ---
+	\begin{siglas}
+		\item[ADC] Analog Digital Converter
+		\item[EAP] Estrutura Analítica de Projeto
+		\item[FPGA] Field-Programmable Gate Array
+		\item[GF] Galois Field
+		\item[IP] Internet Protocol	
+		\item[LED] Light Emitting Diode
+		\item[MAC] Media Access Control
+		\item[RS] Reed Solomon
+		\item[USB] Universal Serial Bus
+		\item[UART] Universal Asynchronous Receiver/Transmitter
+		\item[FET] Field Effect Transistor
+		\item[FLP] Fast Locking Pattern
+		\item[TDP] Topology Dependant Pattern
+		\item[PHR] PHY Header
+		\item[SHR] Synchronization Header
+		\item[PSDU] PHY Service Data Unit
+		\item[MOSFET] Metal Oxide Semiconductor Field Effect Transistor
+		\item[MCS ID] M
+		\item[RLL] Run Length Limited
+		\item[DC] Direct Current
+		\item[AC] Alternating Current
+		\item[TTL] Transistor-Transistor Logic
+		\item[VPAN] Visible-Light Communication Personal Area Network
+		\item[TCP] Transmission Control Protocol
+	\end{siglas}
+	% ---
+	
+	% ---
+	% inserir lista de símbolos
+	% ---
+	\begin{comment}
+	\begin{simbolos}
+		\item[$ \Gamma $] Letra grega Gama
+		\item[$ \Lambda $] Lambda
+		\item[$ \zeta $] Letra grega minúscula zeta
+		\item[$ \in $] Pertence
+	\end{simbolos}
+	\end{comment}
+	% ---
+	
+	% ---
+	% inserir o sumario
+	% ---
+	\pdfbookmark[0]{\contentsname}{toc}
+	\tableofcontents*
+	\cleardoublepage
+	% ---
+	
+	% ----------------------------------------------------------
+	% ELEMENTOS TEXTUAIS
+	% ----------------------------------------------------------
+	\textual
+	
+	% ----------------------------------------------------------
+	% Introdução
+	% ----------------------------------------------------------
+	\include{arm-introducao}
+	% ----------------------------------------------------------
+	% ----------------------------------------------------------
+	% ----------------------------------------------------------
+	% Introdução
+	% ----------------------------------------------------------
+	\include{arm-especificacao}
+	% ----------------------------------------------------------
+	% ----------------------------------------------------------
+	
+	% ----------------------------------------------------------
+	% Metodologia
+	% ----------------------------------------------------------
+	\include{arm-metodologia}
+	% ----------------------------------------------------------
+ 
+	% ----------------------------------------------------------
+	% Execução
+	% ----------------------------------------------------------
+	\include{arm-execucao}
+	% ----------------------------------------------------------
+
+	% ----------------------------------------------------------
+	% Prepara pdf para iniciar o bookmark na raiz
+	% ----------------------------------------------------------
+	\phantompart
+	
+	% ----------------------------------------------------------
+	% Conclusão
+	% ----------------------------------------------------------
+	\include{arm-conclusao}
+	% ----------------------------------------------------------
+	
+	% ----------------------------------------------------------
+	% ELEMENTOS PÓS-TEXTUAIS
+	% ----------------------------------------------------------
+	\postextual
+	% ----------------------------------------------------------
+	
+	% ----------------------------------------------------------
+	% Referências bibliográficas
+	% ----------------------------------------------------------
+	\bibliography{referencias-arm}
+	
+	% ----------------------------------------------------------
+	% Glossário
+	% ----------------------------------------------------------
+	%\glossary
+	% ----------------------------------------------------------
+	
+	% ----------------------------------------------------------
+	% Apêndices - SEM APENDICES
+	% ----------------------------------------------------------
+	%\begin{apendicesenv}
+		%\partapendices % pagina indicando inicio dos apendices
+		%\chapter{Quisque libero justo}
+		%\lipsum[50]
+	%\end{apendicesenv}
+	% ----------------------------------------------------------
+	
+	% ----------------------------------------------------------
+	% Anexos - SEM ANEXOS
+	% ----------------------------------------------------------
+	%\begin{anexosenv}
+		%\partanexos	% Imprime uma página indicando o início dos anexos
+		%\chapter{Morbi ultrices rutrum lorem.}
+		%\lipsum[30]
+	%\end{anexosenv}
+	% ----------------------------------------------------------
+	
+	%---------------------------------------------------------------------
+	% INDICE REMISSIVO
+	%---------------------------------------------------------------------
+	\phantompart
+	\printindex
+	%---------------------------------------------------------------------
+	
+\end{document}

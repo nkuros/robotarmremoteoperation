@@ -1,0 +1,42 @@
+This is BibTeX, Version 0.99dThe top-level auxiliary file: arm.aux
+A level-1 auxiliary file: ficha-catalografica.aux
+A level-1 auxiliary file: arm-resumos.aux
+A level-1 auxiliary file: arm-introducao.aux
+A level-1 auxiliary file: arm-ideiasiniciais.aux
+A level-1 auxiliary file: arm-metodologia.aux
+A level-1 auxiliary file: arm-execucao.aux
+A level-1 auxiliary file: arm-conclusao.aux
+The style file: abntex2-alf.bst
+Database file #1: abntex2-options.bib
+Database file #2: referencias-arm.bib
+Warning--I'm ignoring wearable's extra "url" field
+--line 32 of file referencias-arm.bib
+I was expecting a `,' or a `}'---line 37 of file referencias-arm.bib
+ :  
+ :  Urlaccessdate = {6 mar 2016},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 59 of file referencias-arm.bib
+ :  
+ :  Publisher = {Research India Publications  },
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 71 of file referencias-arm.bib
+ :  
+ :  Publisher = {Research India Publications  },
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 84 of file referencias-arm.bib
+ :  
+ :  Urlaccessdate = {6 mar 2016},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "cisco-forecast"
+Warning--I didn't find a database entry for "vision"
+Warning--I didn't find a database entry for "what-is-lifi"
++---------------------------------------------------------+
+| Estilo bibliográfico abntex2-alf.bst versão v-1.9.6           |
+| Em caso de dúvidas ou problemas com este estilo procure |
+| http://www.abntex.net.br/                               |
++---------------------------------------------------------+
+(There were 4 error messages)

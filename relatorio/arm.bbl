@@ -1,0 +1,111 @@
+\providecommand{\abntreprintinfo}[1]{%
+ \citeonline{#1}}
+\setlength{\labelsep}{0pt}\begin{thebibliography}{}
+\providecommand{\abntrefinfo}[3]{}
+\providecommand{\abntbstabout}[1]{}
+\abntbstabout{v-1.9.6 }
+
+\bibitem[Aleotti, Skoglund e Duckett]{wearable}
+\abntrefinfo{Aleotti, Skoglund e Duckett}{ALEOTTI; SKOGLUND; DUCKETT}{}
+{ALEOTTI, J.; SKOGLUND, A.; DUCKETT, T. Gesture controlled mobile robotic arm
+  using accelerometer.
+\emph{International Journal of Innovative Research in Science, Engineering and
+  Technology}, v.~4.
+Dispon{\'\i}vel em: \url{http://aass.oru.se/~asd/Aleotti04IMG.pdf}.}
+
+\bibitem[Brumson 2011]{uses-robot}
+\abntrefinfo{Brumson}{BRUMSON}{2011}
+{BRUMSON, B. \emph{Robotics in Security and Military Applications}. Robotic
+  Industries Associaton, 2011.
+Dispon{\'\i}vel em:
+  \url{http://www.robotics.org/content-detail.cfm/Industrial-Robotics-Industry-Insights/Robotics-in-Security-and-Military-Applications/content\_id/3112}.
+  Acesso em: 6 mar 2016.}
+
+\bibitem[Chaniotakis e Cory 2006]{comparator-ampop-lecture}
+\abntrefinfo{Chaniotakis e Cory}{CHANIOTAKIS; CORY}{2006}
+{CHANIOTAKIS; CORY. \emph{Operational Amplifier Circuits Comparators and
+  Positive Feedback}. 2006.
+Dispon{\'\i}vel em:
+  \url{https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-071j-introduction-to-electronics-signals-and-measurement-spring-2006/lecture-notes/24\_op\_amps3.pdf}.
+  Acesso em: 16 nov 2016.}
+
+\bibitem[CSA 2011]{uses-arm}
+\abntrefinfo{CSA}{CSA}{2011}
+{CSA. \emph{Uses for Robotic Arm Technologyi}. Canadian Space Agency, 2011.
+Dispon{\'\i}vel em: \url{http://www.asc-csa.gc.ca/eng/canadarm/robotic.asp}.
+  Acesso em: 22 abr 2016.}
+
+\bibitem[Du et al. 2012]{kinect-based}
+\abntrefinfo{Du et al.}{DU et al.}{2012}
+{DU, G. et al. Markerless kinect-based hand tracking for robot teleoperation.
+IEEE, v.~33, 2012.
+Dispon{\'\i}vel em:
+  \url{http://cdn.intechopen.com/pdfs/37895/InTech-Markerless\_kinect\_based\_hand\_tracking\_for\_robot\_teleoperation.pdf}.
+  Acesso em: 6 mar 2016.}
+
+\bibitem[Geisel 1990]{nasa-rs1}
+\abntrefinfo{Geisel}{GEISEL}{1990}
+{GEISEL, W.~A. Tutorial on reed-solomon error correction coding.
+NASA, 1990.
+Dispon{\'\i}vel em:
+  \url{http://ntrs.nasa.gov/archive/nasa/casi.ntrs.nasa.gov/19900019023.pdf}.
+  Acesso em: 19 mai 2016.}
+
+\bibitem[Gupta 2015]{comparison-wifi}
+\abntrefinfo{Gupta}{GUPTA}{2015}
+{GUPTA, S. Research on li-fi technology\& comparison of li-fi/wi-fi.
+2015.
+Dispon{\'\i}vel em:
+  \url{http://www.ijarcsse.com/docs/papers/Volume\_5/6\_June2015/V5I6-0175.pdf}.
+  Acesso em: 6 mar 2016.}
+
+\bibitem[ICOR 2016]{datasheet-caliber}
+\abntrefinfo{ICOR}{ICOR}{2016}
+{ICOR. \emph{CALIBER MK4 LARGE EOD ROBOT Datasheet}.
+[S.l.], 2016. Dispon{\'\i}vel em:
+  \url{https://icor-b23.kxcdn.com/wp-content/uploads/2016/09/CALIBER\%C2\%AE-MK4-V2016.08.25.pdf}.
+  Acesso em: 16 nov 2016.}
+
+\bibitem[IEEE 2011]{lifi-standard}
+\abntrefinfo{IEEE}{IEEE}{2011}
+{IEEE. \emph{802.15.7-2011 - IEEE Standard for Local and Metropolitan Area
+  Networks--Part 15.7: Short-Range Wireless Optical Communication Using Visible
+  Light}.
+[S.l.], 2011. Dispon{\'\i}vel em:
+  \url{http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=6016195}. Acesso
+  em: 6 mar 2016.}
+
+\bibitem[Instruments 2007]{datasheet-opa380}
+\abntrefinfo{Instruments}{INSTRUMENTS}{2007}
+{INSTRUMENTS, T. \emph{Precision, High Speed Transimpedance Amplifier}.
+[S.l.], 2007. Dispon{\'\i}vel em:
+  \url{http://www.ti.com/lit/ds/symlink/opa380.pdf}. Acesso em: 16 nov 2016.}
+
+\bibitem[Mitsantisuk, Katsura e Ohishi]{joystick}
+\abntrefinfo{Mitsantisuk, Katsura e Ohishi}{MITSANTISUK; KATSURA; OHISHI}{}
+{MITSANTISUK, C.; KATSURA, S.; OHISHI, K. Sensorless interaction force control
+  based on b-spline function for human-robot systems.
+\emph{SICE Journal of Control, Measurement, and System Integration}, v.~1.
+Dispon{\'\i}vel em:
+  \url{https://www.jstage.jst.go.jp/article/jcmsi/1/6/1\_6\_452/\_pdf}.}
+
+\bibitem[Sedra/Smith 2014]{microelectronics-circuits}
+\abntrefinfo{Sedra/Smith}{SEDRA/SMITH}{2014}
+{SEDRA/SMITH. \emph{Microelectronics Circuits}. 7. ed. [S.l.]: Oxford, 2014.
+ISBN 0199339139.}
+
+\bibitem[Vishay 2011]{datasheet-irlz14}
+\abntrefinfo{Vishay}{VISHAY}{2011}
+{VISHAY. \emph{IRLZ14, SiHLZ14 Datasheet}.
+[S.l.], 2011. Dispon{\'\i}vel em:
+  \url{http://www.vishay.com/docs/91325/sihlz14.pdf}. Acesso em: 16 nov 2016.}
+
+\bibitem[Wang et al. 2005]{tracker-based}
+\abntrefinfo{Wang et al.}{WANG et al.}{2005}
+{WANG, Y. et al. Robot teleoperation using a vision-based manipulation method.
+IEEE, v.~33, 2005.
+Dispon{\'\i}vel em:
+  \url{http://ieeexplore.ieee.org/abstract/document/5685167/}. Acesso em: 6 mar
+  2016.}
+
+\end{thebibliography}

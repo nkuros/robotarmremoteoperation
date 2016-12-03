@@ -1,0 +1,98 @@
+% ---
+% Arquivo com a execução do Trabalho de Conclusão de Curso dos aluno
+% Daniel Noriaki Kurosawa 
+% da Escola Politécnica da Universidade de São Paulo
+% ---
+	\chapter{Execução}\label{cap-execucao}
+	
+5.1	Controle abre-fecha e rotação da garra
+Primeiramente, foi feito o estudo da garra e de seu controle, uma vez que seu controle é totalmente independente da posição do braço. Para os testes, a fim de prova de conceito, foram usadas entradas (abre-fecha, graus de rotação) geradas pelo próprio computador.
+
+
+Figura 4: Garra do braço robótico
+5.2	Modelagem de movimentação do braço
+Foi feita a modelagem de todos os movimentos possíveis para o braço robótico. Esses resultados serão posteriormente usados como saída para o treinamento da ANFIS.
+5.2.1	Modelagem da movimentação do braço para os motores 1 e 2, correspondentes ao ombro e ao cotovelo do braço
+Foi feita inicialmente a modelagem para dois motores (ombro e cotovelo), adaptando-se o modelo da referência [7] ao braço a ser utilizado. 
+
+Figura 5: Coordenadas X-Y para todos os valores de theta1 e theta2
+5.2.2	Modelagem da movimentação do braço para os motores 1, 2 e 3 correspondentes ao ombro, cotovelo e rotação do ombro do braço
+O modelo foi ampliado para incluir o terceiro dos 4 motores de movimento do braço.
+
+Figura 6: Coordenadas X-Y-Z para todos os valores de theta1, theta2 e theta3
+5.2.3	Modelagem da movimentação do braço para os motores 1, 2, 3 e 4 correspondentes ao ombro, cotovelo, rotação do ombro e pulso do braço
+
+Inclusão do quarto e último motor referente ao braço, completando o modelo a ser utilizado.
+
+
+Figura 7: Coordenadas X-Y-Z para todos os valores de theta1, theta2, theta3 e theta4
+
+5.3	Modelagens do servo motor
+Para a modelagem do servo, foram feitas modificações no servo, que permitiram a leitura da posição em tempo real do motor. Dessa forma, é possível a comparação da saída do sistema em relação à entrada, possibilitando uma estimativa de uma função de transferência simplificada, assim como a constatação de alguma não linearidade do sistema.
+
+Figura 8: Servo motor após modificação
+A partir disso, foi feita a aquisição da resposta ao degrau do mesmo sendo utilizado um Arduino MEGA 2560 como interface. 
+Figura 9: Montagem Experimental para determinação do modelo do servo motor
+
+Figura 10: Saída obtida à partir da aplicação de degrau como entrada
+Os dados obtidos foram então inseridos no programa Matlab, em que através da ferramenta System Identification foi determinado o modelo do servo motor.
+
+Figura 11: Utilização da ferramenta System Identification do Matlab para determinação de modelo
+
+Figura 12:Modelo Linearizado Obtido Figura 13:Diagrama de Polos e Zeros do Modelo Obtido
+
+Figura 14:Resposta ao degrau do Modelo Obtido
+5.4	Modelagem do controlador
+Para a modelagem do controlador, é proposta uma abordagem usando-se a planta real, a fim de capturar todas as não linearidades da planta, sendo o modelo linearizado usado para estimativa inicial dos parâmetros dos controladores PID e PIV puros.
+Devido ao alto custo computacional e a necessidade de modificação do hardware, esta abordagem foi interrompida.
+
+Figura 15: Controlador PID
+
+Figura 16:Controlador PIV
+
+5.5	Aquisição de imagens da camera
+
+Figura 17: Imagem das cameras estereoscópicas
+A aquisição das imagens foi feita usando um computador Raspberry Pi rodando o sistema operacional Raspbian Jessie. Para isso, foram testados os programas motion, gstreamer e Mjpg-Streamer. A seguir,  é feita uma comparação dos programas:
+motion: baixa complexidade de configuração, taxa de captura baixa, alto consumo de capacidade de processamento. Foi logo descartado
+Gstreamer: alta complexidade para configuração inicial, taxa de captura moderada, alto consumo de capacidade de processamento, não amigável ao uso de duas câmeras.
+Mjpg-Streamer: Configuração inicial de dificuldade moderada, taxa de captura adequada quando configurado para modo de baixa resolução.
+Após a escolha do programa, foi feito o estudo para a captura em tempo real de duas câmeras ao mesmo tempo. Para isso, foi primeiro feito o teste para duas instâncias do programa rodando ao mesmo tempo, após ajuste de taxa de captura e resolução provou-se que o programa mantinha-se estável o suficiente para aplicação.  No anexo A estão disponíveis os códigos utilizados para a inicialização do programa MJPG-Streamer e o código da página HTML usada para juntar as imagens das duas câmeras 
+
+
+
+5.6	Montagem do sistema de motores e controle dos motores
+
+Após a configuração das câmeras, foi feita a montagem de sua base com motores, que pode ser vista abaixo: 
+
+
+Figura 18: Sistema de câmeras com seus componentes
+Após a montagem, foi feita a configuração de duas placas Particle Photon que foram utilizadas como transmissor e receptor, devido ao seu tamanho e peso reduzidos e ao fato de possuir uma antena WiFi já embutida.
+Para a captura dos movimentos da cabeça do usuário, decidiu-se acoplar um giroscópio externo aos óculos de realidade virtual, de modo que o projeto não dependesse de formas de captura de movimentos específicas para cada modelo de óculos.
+Para o transmissor, foram realizadas duas versões de código.
+Inicialmente, foi  escrito um código usando-se a saída do giroscópio e realizando as contas usando-se o microcontrolador conforme [23]. Este código era altamente dependente da posição inicial do giroscópio, que era usada para uma rotina de calibragem inicial. (Anexo B)
+
+
+A segunda versão do código foi realizada usando-se bibliotecas específicas ("MPU6050/I2Cdev.h" e "MPU6050/MPU6050\_6Axis\_MotionApps20.h") traduzidas de arduino, que fazem uso de algoritmos internos ao giroscópio para a calibragem , tornando-a mais rápida e precisa (Anexo B)
+
+Para o receptor, foi feita uma única versão, responsável por receber os ângulos de rotação e transmiti-los aos dois motores na base da câmera (Anexo B).
+A transmissão dos dados atualmente se dá via protocolo UDP em uma rede local.
+
+Figura 19: Óculos de realidade virtual com destaque para o giroscópio externo
+5.7	Captura de movimentos do braço do usuário
+Foi utilizado inicialmente a linguagem Processing (baseada em Java), usando-se da bibliotenca OpenNI para a captura dos movimentos. No entanto, devido a baixa precisão da captura usando a biblioteca.,
+
+
+Figura 20: Captura de angulos usando Processing
+A programação foi realizada em Visual C\# usando-se como base o exemplo de captura e visualização de esqueleto do Microsoft Kinect 1.8 fornecido pela Microsoft, ao qual foram adicionadas funcionalidades necessárias ao projeto. No estado atual, o programa pode além de exibir o esqueleto com as juntas do usuário, capturar os ângulos do braço do usuário e exibi-los como números, para que seja feito o teste de coerência dos dados a serem enviados. Os códigos usados atualmente encontram-se no Anexo C.
+
+Figura 21: Aquisição de Angulos dos braços
+5.8	Controle dos servomotores via conexão serial
+Foi feita a integração dos servomotores com o programa responsável pela captura dos movimentos do usuário via conexão serial USB. Pretendia-se para esta etapa o início do teste em rede local, mas devido a atrasos no envio do shield Wifi ESP8266 e a necessidade de reposição de peças do braço, houve atrasos no projeto. 
+Como próximos passos, deseja-se implementar a possibilidade de uso do braço usando tecnologia WiFi e adaptar o código ao Kinect 2.0. 
+
+Figura 22: Teste do motor da base do braço
+
+		
+		
+		
