@@ -1,0 +1,65 @@
+#include <stdlib.h>
+#include "application.h"
+int ledPin = D7;
+SYSTEM_MODE(SEMI_AUTOMATIC);
+// UDP Port used for two way communication
+unsigned int localPort = 8888;
+    int   angle_x;
+    int   angle_y;
+// An UDP instance to let us send and receive packets over UDP
+UDP Udp;
+//TCPServer server = TCPServer(serverPort);
+//TCPClient client;
+//byte server[] = { 74, 125, 224, 72 };
+//LED
+bool ledState = false;
+void toggleLed() {
+    ledState = !ledState;
+    digitalWrite(ledPin, ledState);
+    //delay(70);
+}
+//servo control
+Servo myservo1;
+Servo myservo2;
+
+void setup() {
+    WiFi.connect();    
+ //Particle.disconnect();
+    pinMode(ledPin, OUTPUT);
+    Serial.begin(9600);
+    //WiFi Setup
+
+      // start the UDP
+     Udp.begin(localPort);
+    //servo
+    myservo1.attach(D2); 
+    myservo2.attach(D3); 
+    
+
+    
+    
+}
+
+void loop() {
+         //   Particle.disconnect();
+        // going to receive 4 samples from the trasmitter
+        // Read first char of data received
+       if (Udp.parsePacket() > 0) {
+
+    angle_x = Udp.read();
+    angle_y = Udp.read();
+    toggleLed();
+
+    Serial.printlnf("%d %d",angle_x,angle_y);
+   }
+//Serial.println(WiFi.localIP());    //servo
+    if(angle_x<0) angle_x=0;
+    if(angle_y<0) angle_x=0;
+    if(angle_x>180) angle_x=180;
+    if(angle_y>180) angle_y=180;
+    myservo1.write(angle_x);
+    myservo2.write(angle_y);
+    
+    //LED
+
+}

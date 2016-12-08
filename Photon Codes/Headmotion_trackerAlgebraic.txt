@@ -1,0 +1,214 @@
+// This #include statement was automatically added by the Particle IDE.
+#include "MPU6050/MPU6050.h"
+#include "math.h"
+// Use the following global variables and access functions to help store the overall
+// rotation angle of the sensor
+unsigned long last_read_time;
+float         last_x_angle;  // These are the filtered angles
+float         last_y_angle;
+float         last_z_angle;  
+float         last_gyro_x_angle;  // Store the gyro angles to compare drift
+float         last_gyro_y_angle;
+float         last_gyro_z_angle;
+float         base_x_accel;
+float         base_y_accel;
+float         base_z_accel;
+float         base_x_gyro;
+float         base_y_gyro;
+float         base_z_gyro;
+
+
+int ledPin = D7;
+
+// UDP Port used for two way communication
+unsigned int localPort = 8888;
+
+// An UDP instance to let us send and receive packets over UDP
+UDP Udp;
+
+// MPU variables:
+MPU6050 accelgyro;
+int16_t ax, ay, az;
+int16_t gx, gy, gz;
+
+//LED
+bool ledState = false;
+void toggleLed() {
+    ledState = !ledState;
+    digitalWrite(ledPin, ledState);
+}
+//servo control
+Servo myservo1;
+Servo myservo2;
+
+//Asign old values to last variables
+void set_last_read_angle_data(unsigned long time, float x, float y, float z, float x_gyro, float y_gyro, float z_gyro) {
+  last_read_time = time;
+  last_x_angle = x;
+  last_y_angle = y;
+  last_z_angle = z;
+  last_gyro_x_angle = x_gyro;
+  last_gyro_y_angle = y_gyro;
+  last_gyro_z_angle = z_gyro;
+}
+
+inline unsigned long get_last_time() {return last_read_time;}
+inline float get_last_x_angle() {return last_x_angle;}
+inline float get_last_y_angle() {return last_y_angle;}
+inline float get_last_z_angle() {return last_z_angle;}
+inline float get_last_gyro_x_angle() {return last_gyro_x_angle;}
+inline float get_last_gyro_y_angle() {return last_gyro_y_angle;}
+inline float get_last_gyro_z_angle() {return last_gyro_z_angle;}
+
+
+
+// The sensor should be motionless on a horizontal surface 
+//  while calibration is happening
+void calibrate_sensors() {
+  int                   num_readings = 10;
+  float                 x_accel = 0;
+  float                 y_accel = 0;
+  float                 z_accel = 0;
+  float                 x_gyro = 0;
+  float                 y_gyro = 0;
+  float                 z_gyro = 0;
+  
+  //Serial.println("Starting Calibration");
+
+  // Discard the first set of values read from the IMU
+     accelgyro.getMotion6(&ax, &ay, &az, &gx, &gy, &gz);  
+  // Read and average the raw values from the IMU
+  for (int i = 0; i < num_readings; i++) {
+     accelgyro.getMotion6(&ax, &ay, &az, &gx, &gy, &gz);
+    x_accel += ax;
+    y_accel += ay;
+    z_accel += az;
+    x_gyro += gx;
+    y_gyro += gy;
+    z_gyro += gz;
+    delay(100);
+  }
+  x_accel /= num_readings;
+  y_accel /= num_readings;
+  z_accel /= num_readings;
+  x_gyro /= num_readings;
+  y_gyro /= num_readings;
+  z_gyro /= num_readings;
+  
+  // Store the raw calibration values globally
+  base_x_accel = x_accel;
+  base_y_accel = y_accel;
+  base_z_accel = z_accel;
+  base_x_gyro = x_gyro;
+  base_y_gyro = y_gyro;
+  base_z_gyro = z_gyro;
+  
+  //Serial.println("Finishing Calibration");
+  
+  //Chooses WiFi Antenna
+  //STARTUP(WiFi.selectAntenna(ANT_EXTERNAL)); // selects the u.FL antenna
+  
+  
+}
+void setup() {
+    pinMode(ledPin, OUTPUT);
+
+    Wire.begin();
+    Serial.begin(38400);
+    //WiFi Setup
+    //WiFi.connect(WIFI_CONNECT_SKIP_LISTEN);
+      // start the UDP
+     Udp.begin(localPort);
+
+
+
+
+       // Particle.disconnect();
+        
+        
+        
+    // The following line will wait until you connect to the Spark.io using serial and hit enter. This gives
+    // you enough time to start capturing the data when you are ready instead of just spewing data to the UART.
+    //
+    // So, open a serial connection using something like:
+    // screen /dev/tty.usbmodem1411 9600
+    //while(!Serial.available()) SPARK_WLAN_Loop();
+    
+   // Serial.println("Initializing I2C devices...");
+    accelgyro.initialize();
+
+    // Cerify the connection:
+    //Serial.println("Testing device connections...");
+    //Serial.println(accelgyro.testConnection() ? "MPU6050 connection successful" : "MPU6050 connection failed");
+    calibrate_sensors();
+    //servo
+    myservo1.attach(D2); 
+    myservo2.attach(D3); 
+}
+
+void loop() {
+    // read raw accel/gyro measurements from device
+      int error;
+      double dT;
+      unsigned long t_now = millis();
+
+  // Convert gyro values to degrees/sec
+  float FS_SEL = 131;
+  
+  // Get angle values from accelerometer
+  float RADIANS_TO_DEGREES = 180/3.14159;
+
+    accelgyro.getMotion6(&ax, &ay, &az, &gx, &gy, &gz);
+  float gyro_x = (ax - base_x_gyro)/FS_SEL;
+  float gyro_y = (ay - base_y_gyro)/FS_SEL;
+  float gyro_z = (az - base_z_gyro)/FS_SEL;
+  
+  // Get raw acceleration values
+  float G_CONVERT = 16384;
+  float accel_x = (ax - base_x_accel)/G_CONVERT;
+  float accel_y = (ay - base_y_accel)/G_CONVERT;
+  float accel_z = (az - base_z_accel)/G_CONVERT;
+  
+      float accel_angle_y = atan(-1*ax/sqrt(pow(ay,2) + pow(az,2)))*RADIANS_TO_DEGREES;
+      float accel_angle_x = atan(ay/sqrt(pow(ax,2) + pow(az,2)))*RADIANS_TO_DEGREES;
+      float accel_angle_z = atan(sqrt(pow(ax,2) + pow(ay,2))/az)*RADIANS_TO_DEGREES;
+  // Compute the (filtered) gyro angles
+  float dt =(t_now - get_last_time())/1000.0;
+  float gyro_angle_x = gyro_x*dt + get_last_x_angle();
+  float gyro_angle_y = gyro_y*dt + get_last_y_angle();
+  float gyro_angle_z = gyro_z*dt + get_last_z_angle();
+  
+  // Compute the drifting gyro angles
+  float unfiltered_gyro_angle_x = gyro_x*dt + get_last_gyro_x_angle();
+  float unfiltered_gyro_angle_y = gyro_y*dt + get_last_gyro_y_angle();
+  float unfiltered_gyro_angle_z = gyro_z*dt + get_last_gyro_z_angle();
+  
+  // Apply the complementary filter to figure out the change in angle - choice of alpha is
+  // estimated now.  Alpha depends on the sampling rate...
+  float alpha = 0.96;
+  float angle_x = alpha*gyro_angle_x + (1.0 - alpha)*accel_angle_x;
+  float angle_y = alpha*gyro_angle_y + (1.0 - alpha)*accel_angle_y;
+  float angle_z = alpha*gyro_angle_z + (1.0 - alpha)*accel_angle_z; 
+   set_last_read_angle_data(t_now, angle_x, angle_y, angle_z, unfiltered_gyro_angle_x, unfiltered_gyro_angle_y, unfiltered_gyro_angle_z); 
+   
+   //Serial Print
+    Serial.print(angle_x); Serial.print("\t");
+    Serial.print(angle_y); Serial.print("\t");
+    Serial.println(angle_z);
+    float send_x = 90-angle_x;
+    float send_y = 90+angle_y;
+    unsigned char msg[2] = { send_x,send_y};
+
+    //UDP print
+     Udp.beginPacket(IPAddress(192,168,1,103),localPort);
+    Udp.write(msg, 2);
+    Udp.endPacket();
+
+    //servo
+    myservo1.write(90-angle_x);
+    myservo2.write(90+angle_y);
+    
+    //LED
+    toggleLed();
+      delay(40);
+}

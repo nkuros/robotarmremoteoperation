@@ -1,0 +1,73 @@
+#include <stdlib.h>
+#include "application.h"
+SYSTEM_MODE(SEMI_AUTOMATIC);
+Servo shoulder;
+Servo rot;
+Servo elbow;
+Servo wrist;
+Servo wrot;
+int bytes[5];
+
+int ledPin = D7;
+
+// UDP Port used for two way communication
+unsigned int localPort = 8888;
+    int   angle_x;
+    int   angle_y;
+// An UDP instance to let us send and receive packets over UDP
+UDP Udp;
+//TCPServer server = TCPServer(serverPort);
+//TCPClient client;
+//byte server[] = { 74, 125, 224, 72 };
+//LED
+bool ledState = false;
+void toggleLed() {
+    ledState = !ledState;
+    digitalWrite(ledPin, ledState);
+    //delay(70);
+}
+//servo control
+
+
+void setup() {
+    WiFi.connect();    
+ //Particle.disconnect();
+    pinMode(ledPin, OUTPUT);
+    Serial.begin(9600);
+    //WiFi Setup
+
+      // start the UDP
+     Udp.begin(localPort);
+    //servo
+
+   shoulder.attach(D0);
+  rot.attach(D1);
+  elbow.attach(D2);
+  wrist.attach(D3);   
+ wrot.attach(TX);
+    shoulder.write(90);
+  rot.write(90);
+   elbow.write(90);
+  wrist.write(90);
+  wrot.write(90);
+    
+}
+
+
+void loop() {
+  // send data only when you receive data:
+
+       if (Udp.parsePacket() > 0) {
+
+  for(int n=0; n<5; n++)
+  bytes[n] = Udp.read(); // Then: Get them.
+    toggleLed();
+
+    Serial.printlnf("%d %d",angle_x,angle_y);
+   }
+    shoulder.write(bytes[0]);
+    rot.write(bytes[1]);
+    elbow.write(bytes[2]);
+    wrist.write(bytes[3]);
+    wrot.write(bytes[4]);
+}
