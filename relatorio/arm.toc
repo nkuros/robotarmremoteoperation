@@ -7,47 +7,93 @@
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{Introdu\IeC {\c c}\IeC {\~a}o}{21}{chapter*.10}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {1}\MakeTextUppercase {Especificac\IeC {\~o}es}}{25}{chapter.1}
-\contentsline {section}{\numberline {1.1}Vis\IeC {\~a}o Empresarial}{25}{section.1.1}
-\contentsline {subsection}{\numberline {1.1.1}Monetiza\IeC {\c c}\IeC {\~a}o do projeto}{25}{subsection.1.1.1}
-\contentsline {section}{\numberline {1.2}Vis\IeC {\~a}o de informa\IeC {\c c}\IeC {\~a}o}{26}{section.1.2}
-\contentsline {subsection}{\numberline {1.2.1}Elementos de informa\IeC {\c c}\IeC {\~a}o do sistema}{26}{subsection.1.2.1}
-\contentsline {subsection}{\numberline {1.2.2}Manipula\IeC {\c c}\IeC {\~a}o de informa\IeC {\c c}\IeC {\~o}es}{26}{subsection.1.2.2}
-\contentsline {subsection}{\numberline {1.2.3}Fluxo de informa\IeC {\c c}\IeC {\~o}es}{26}{subsection.1.2.3}
-\contentsline {section}{\numberline {1.3}Vis\IeC {\~a}o Computacional}{26}{section.1.3}
-\contentsline {subsection}{\numberline {1.3.1}Requisitos}{26}{subsection.1.3.1}
-\contentsline {subsubsection}{\numberline {1.3.1.1}Requisitos funcionais}{26}{subsubsection.1.3.1.1}
-\contentsline {subsubsection}{\numberline {1.3.1.2}Requisitos n\IeC {\~a}o funcionais}{26}{subsubsection.1.3.1.2}
-\contentsline {section}{\numberline {1.4}Vis\IeC {\~a}o da Engenharia/Infraestrutura}{26}{section.1.4}
-\contentsline {subsection}{\numberline {1.4.1}Arquitetura do sistema}{26}{subsection.1.4.1}
-\contentsline {section}{\numberline {1.5}Vis\IeC {\~a}o Tecnol\IeC {\'o}gica}{26}{section.1.5}
+\contentsline {chapter}{\chapternumberline {1}\MakeTextUppercase {Introdu\IeC {\c c}\IeC {\~a}o}}{23}{chapter.1}
+\contentsline {chapter}{Introdu\IeC {\c c}\IeC {\~a}o}{23}{chapter.1}
+\contentsline {section}{\numberline {1.1}Motiva\IeC {\c c}\IeC {\~a}o}{23}{section.1.1}
+\contentsline {section}{\numberline {1.2}Ideias iniciais e alternativas do projeto}{24}{section.1.2}
+\contentsline {section}{\numberline {1.3}Objetivo}{25}{section.1.3}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {2}\MakeTextUppercase {Metodologia}}{27}{chapter.2}
-\contentsline {section}{\numberline {2.1}Planejamento}{27}{section.2.1}
-\contentsline {subsection}{\numberline {2.1.1}Trello}{27}{subsection.2.1.1}
-\contentsline {subparagraph}{Backlog}{27}{section*.16}
-\contentsline {subparagraph}{Sprint}{28}{section*.17}
-\contentsline {subparagraph}{Doing}{28}{section*.18}
-\contentsline {subparagraph}{To be verified}{28}{section*.19}
-\contentsline {subparagraph}{Done}{28}{section*.20}
-\contentsline {subparagraph}{Halt}{28}{section*.21}
-\contentsline {subsection}{\numberline {2.1.2}Cronograma}{28}{subsection.2.1.2}
-\contentsline {subsection}{\numberline {2.1.3}Requisitos}{29}{subsection.2.1.3}
-\contentsline {subsubsection}{\numberline {2.1.3.1}Requisitos Funcionais}{29}{subsubsection.2.1.3.1}
-\contentsline {paragraph}{\numberline {2.1.3.1.1}Requisitos de hardware}{29}{paragraph.2.1.3.1.1}
-\contentsline {paragraph}{\numberline {2.1.3.1.2}Requisitos de software}{29}{paragraph.2.1.3.1.2}
-\contentsline {subsubsection}{\numberline {2.1.3.2}Requisitos N\IeC {\~a}o-Funcionais}{29}{subsubsection.2.1.3.2}
-\contentsline {paragraph}{\numberline {2.1.3.2.1}Conclus\IeC {\~a}o}{29}{paragraph.2.1.3.2.1}
-\contentsline {section}{\numberline {2.2}Software}{29}{section.2.2}
+\contentsline {chapter}{\chapternumberline {2}\MakeTextUppercase {Especifica\IeC {\c c}\IeC {\~o}es}}{27}{chapter.2}
+\contentsline {section}{\numberline {2.1}Vis\IeC {\~a}o Empresarial}{27}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Monetiza\IeC {\c c}\IeC {\~a}o do projeto}{27}{subsection.2.1.1}
+\contentsline {subsubsection}{\numberline {2.1.1.1}Sistema de c\IeC {\^a}meras estereosc\IeC {\'o}pico}{27}{subsubsection.2.1.1.1}
+\contentsline {subsubsection}{\numberline {2.1.1.2}Bra\IeC {\c c}o mec\IeC {\^a}nico}{27}{subsubsection.2.1.1.2}
+\contentsline {subsubsection}{\numberline {2.1.1.3}Projeto como um todo}{27}{subsubsection.2.1.1.3}
+\contentsline {section}{\numberline {2.2}Vis\IeC {\~a}o de Informa\IeC {\c c}\IeC {\~a}o}{28}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Elementos de informa\IeC {\c c}\IeC {\~a}o do sistema}{28}{subsection.2.2.1}
+\contentsline {subsubsection}{\numberline {2.2.1.1}Rota\IeC {\c c}\IeC {\~a}o e acelera\IeC {\c c}\IeC {\~a}o da cabe\IeC {\c c}a do us\IeC {\'u}ario}{28}{subsubsection.2.2.1.1}
+\contentsline {subsubsection}{\numberline {2.2.1.2}Imagens do ambiente remoto}{29}{subsubsection.2.2.1.2}
+\contentsline {subsubsection}{\numberline {2.2.1.3}\IeC {\^A}ngulos do bra\IeC {\c c}o do usu\IeC {\'a}rio}{29}{subsubsection.2.2.1.3}
+\contentsline {subsection}{\numberline {2.2.2}Manipula\IeC {\c c}\IeC {\~a}o de informa\IeC {\c c}\IeC {\~o}es}{29}{subsection.2.2.2}
+\contentsline {subsubsection}{\numberline {2.2.2.1}Bra\IeC {\c c}o rob\IeC {\'o}tico}{29}{subsubsection.2.2.2.1}
+\contentsline {subsubsection}{\numberline {2.2.2.2}C\IeC {\^a}meras}{29}{subsubsection.2.2.2.2}
+\contentsline {subsubsection}{\numberline {2.2.2.3}Movimenta\IeC {\c c}\IeC {\~a}o das C\IeC {\^a}meras}{29}{subsubsection.2.2.2.3}
+\contentsline {subsection}{\numberline {2.2.3}Fluxo de informa\IeC {\c c}\IeC {\~o}es}{30}{subsection.2.2.3}
+\contentsline {section}{\numberline {2.3}Vis\IeC {\~a}o Computacional}{32}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Requisitos}{32}{subsection.2.3.1}
+\contentsline {subsubsection}{\numberline {2.3.1.1}Requisitos funcionais}{32}{subsubsection.2.3.1.1}
+\contentsline {subsubsection}{\numberline {2.3.1.2}Requisitos n\IeC {\~a}o funcionais}{34}{subsubsection.2.3.1.2}
+\contentsline {section}{\numberline {2.4}Vis\IeC {\~a}o da Engenharia/Infraestrutura}{35}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}Arquitetura do sistema}{35}{subsection.2.4.1}
+\contentsline {subsubsection}{\numberline {2.4.1.1}Sistema de Opera\IeC {\c c}\IeC {\~a}o do Bra\IeC {\c c}o Mec\IeC {\^a}nico}{35}{subsubsection.2.4.1.1}
+\contentsline {paragraph}{\numberline {2.4.1.1.1}Hardware de captura de dados}{36}{paragraph.2.4.1.1.1}
+\contentsline {paragraph}{\numberline {2.4.1.1.2}Hardware de controle dos motores}{36}{paragraph.2.4.1.1.2}
+\contentsline {subsubsection}{\numberline {2.4.1.2}Sistema de Opera\IeC {\c c}\IeC {\~a}o do sistema de motores da c\IeC {\^a}mera}{36}{subsubsection.2.4.1.2}
+\contentsline {paragraph}{\numberline {2.4.1.2.1}Hardware de captura de dados}{36}{paragraph.2.4.1.2.1}
+\contentsline {paragraph}{\numberline {2.4.1.2.2}Hardware de controle dos motores}{36}{paragraph.2.4.1.2.2}
+\contentsline {subsubsection}{\numberline {2.4.1.3}Sistema de Imagens Estereosc\IeC {\'o}picas}{36}{subsubsection.2.4.1.3}
+\contentsline {paragraph}{\numberline {2.4.1.3.1}Hardware de captura de imagens}{36}{paragraph.2.4.1.3.1}
+\contentsline {paragraph}{\numberline {2.4.1.3.2}Servidor}{37}{paragraph.2.4.1.3.2}
+\contentsline {paragraph}{\numberline {2.4.1.3.3}Hardware de interface gr\IeC {\'a}fica}{37}{paragraph.2.4.1.3.3}
+\contentsline {section}{\numberline {2.5}Vis\IeC {\~a}o Tecnol\IeC {\'o}gica}{37}{section.2.5}
+\contentsline {subsection}{\numberline {2.5.1}Microsoft Kinect}{38}{subsection.2.5.1}
+\contentsline {subsection}{\numberline {2.5.2}Particle Photon}{39}{subsection.2.5.2}
+\contentsline {subsection}{\numberline {2.5.3}GY521}{40}{subsection.2.5.3}
+\contentsline {subsection}{\numberline {2.5.4}Raspberry Pi}{40}{subsection.2.5.4}
+\contentsline {subsection}{\numberline {2.5.5}Java}{42}{subsection.2.5.5}
+\contentsline {subsubsection}{\numberline {2.5.5.1}Hist\IeC {\'o}ria}{43}{subsubsection.2.5.5.1}
+\contentsline {subsubsection}{\numberline {2.5.5.2}Caracter\IeC {\'\i }sticas da linguagem}{43}{subsubsection.2.5.5.2}
+\contentsline {subsection}{\numberline {2.5.6}Visual C\#}{43}{subsection.2.5.6}
+\contentsline {subsubsection}{\numberline {2.5.6.1}Hist\IeC {\'o}ria}{44}{subsubsection.2.5.6.1}
+\contentsline {subsubsection}{\numberline {2.5.6.2}Caracter\IeC {\'\i }sticas da linguagem}{44}{subsubsection.2.5.6.2}
+\contentsline {subsection}{\numberline {2.5.7}Protocolo HTTP}{45}{subsection.2.5.7}
+\contentsline {subsection}{\numberline {2.5.8}Servidor Apache HTTP}{45}{subsection.2.5.8}
+\contentsline {subsubsection}{\numberline {2.5.8.1}Caracter\IeC {\'\i }sticas}{46}{subsubsection.2.5.8.1}
+\contentsline {subsection}{\numberline {2.5.9}mjpg-streamer}{46}{subsection.2.5.9}
+\contentsline {subsubsection}{\numberline {2.5.9.1}Caracter\IeC {\'\i }sticas}{46}{subsubsection.2.5.9.1}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase {Execu\IeC {\c c}\IeC {\~a}o}}{31}{chapter.3}
+\contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase {Metodologia}}{47}{chapter.3}
+\contentsline {section}{\numberline {3.1}Planejamento}{47}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Trello}{47}{subsection.3.1.1}
+\contentsline {subparagraph}{Backlog}{47}{section*.29}
+\contentsline {subparagraph}{Sprint}{48}{section*.30}
+\contentsline {subparagraph}{Doing}{48}{section*.31}
+\contentsline {subparagraph}{To be verified}{48}{section*.32}
+\contentsline {subparagraph}{Done}{48}{section*.33}
+\contentsline {subparagraph}{Halt}{48}{section*.34}
+\contentsline {section}{\numberline {3.2}Programas e IDEs}{48}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Visual Studio 2015}{48}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Raspberry Pi}{49}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}Particle IDE}{49}{subsection.3.2.3}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {Conclus\IeC {\~a}o}}{35}{chapter.4}
+\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {Execu\IeC {\c c}\IeC {\~a}o e Resultados obtidos}}{53}{chapter.4}
+\contentsline {subsection}{\numberline {4.0.1}Controle abre-fecha e rota\IeC {\c c}\IeC {\~a}o da garra}{53}{subsection.4.0.1}
+\contentsline {subsection}{\numberline {4.0.2}Modelagem de movimenta\IeC {\c c}\IeC {\~a}o do bra\IeC {\c c}o}{53}{subsection.4.0.2}
+\contentsline {subsubsection}{\numberline {4.0.2.1}Modelagem inicial}{53}{subsubsection.4.0.2.1}
+\contentsline {subsubsection}{\numberline {4.0.2.2}Modelagem da movimenta\IeC {\c c}\IeC {\~a}o do bra\IeC {\c c}o para os motores correspondentes ao ombro, cotovelo e rota\IeC {\c c}\IeC {\~a}o do ombro do bra\IeC {\c c}o}{54}{subsubsection.4.0.2.2}
+\contentsline {subsubsection}{\numberline {4.0.2.3}Modelagem da movimenta\IeC {\c c}\IeC {\~a}o do bra\IeC {\c c}o para os motores correspondentes ao ombro, cotovelo, rota\IeC {\c c}\IeC {\~a}o do ombro e pulso do bra\IeC {\c c}o}{55}{subsubsection.4.0.2.3}
+\contentsline {subsection}{\numberline {4.0.3}Aquisi\IeC {\c c}\IeC {\~a}o de imagens pela camera}{55}{subsection.4.0.3}
+\contentsline {subsection}{\numberline {4.0.4}Montagem do sistema de motores e controle dos motores da c\IeC {\^a}mera}{56}{subsection.4.0.4}
+\contentsline {subsection}{\numberline {4.0.5} Captura de \IeC {\^a}ngulos usando Processing}{57}{subsection.4.0.5}
+\contentsline {subsection}{\numberline {4.0.6} Captura de \IeC {\^a}ngulos usando Visual C\#}{58}{subsection.4.0.6}
+\contentsline {subsection}{\numberline {4.0.7}Controle dos servomotores via conex\IeC {\~a}o serial usando Visual C\#}{58}{subsection.4.0.7}
+\contentsline {subsection}{\numberline {4.0.8}Controle dos servomotores via conex\IeC {\~a}o UDP usando Visual C\# e testes de integra\IeC {\c c}\IeC {\~a}o}{58}{subsection.4.0.8}
+\contentsline {section}{\numberline {4.1}Resultados}{58}{section.4.1}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {Conclus\IeC {\~a}o}}{61}{chapter.5}
 \vspace {\cftbeforechapterskip }
 \vspace {\cftbeforechapterskip }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{\uppercase {Refer\^encias}}{37}{section*.26}
+\contentsline {chapter}{\uppercase {Refer\^encias}}{63}{section*.54}
 \vspace {\cftbeforechapterskip }

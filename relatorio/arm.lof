@@ -1,5 +1,36 @@
 \select@language {brazil}
 \select@language {brazil}
-\contentsline {figure}{\numberline {1}{\ignorespaces Diagrama do projeto\relax }}{22}{figure.caption.11}
-\contentsline {figure}{\numberline {2}{\ignorespaces Diagrama de Gantt do sistema \relax }}{27}{figure.caption.15}
-\contentsline {figure}{\numberline {3}{\ignorespaces Kanban do projeto usando Trello \relax }}{28}{figure.caption.22}
+\contentsline {figure}{\numberline {1}{\ignorespaces Diagrama do projeto\relax }}{24}{figure.caption.10}
+\contentsline {figure}{\numberline {2}{\ignorespaces Elementos de informa\IeC {\c c}\IeC {\~a}o do sistema\relax }}{28}{figure.caption.11}
+\contentsline {figure}{\numberline {3}{\ignorespaces Manipula\IeC {\c c}\IeC {\~a}o de dados pelo sistema do bra\IeC {\c c}o rob\IeC {\'o}tico\relax }}{29}{figure.caption.12}
+\contentsline {figure}{\numberline {4}{\ignorespaces Manipula\IeC {\c c}\IeC {\~a}o de dados pelo sistema de c\IeC {\^a}meras estereosc\IeC {\'o}picas\relax }}{30}{figure.caption.13}
+\contentsline {figure}{\numberline {5}{\ignorespaces Manipula\IeC {\c c}\IeC {\~a}o de dados pelo sistema de motores da c\IeC {\^a}mera\relax }}{30}{figure.caption.14}
+\contentsline {figure}{\numberline {6}{\ignorespaces Tecnologias Utilizadas para Conex\IeC {\~a}o entre os N\IeC {\'o}s\relax }}{31}{figure.caption.15}
+\contentsline {figure}{\numberline {7}{\ignorespaces Arquitetura do sistema de opera\IeC {\c c}\IeC {\~a}o do bra\IeC {\c c}o rob\IeC {\'o}tico\relax }}{35}{figure.caption.16}
+\contentsline {figure}{\numberline {8}{\ignorespaces Arquitetura do sistema de motores da c\IeC {\^a}mera\relax }}{36}{figure.caption.17}
+\contentsline {figure}{\numberline {9}{\ignorespaces Arquitetura do sistema de captura de imagens estereosc\IeC {\'o}picas\relax }}{37}{figure.caption.18}
+\contentsline {figure}{\numberline {10}{\ignorespaces Vis\IeC {\~a}o tecnol\IeC {\'o}gica de Hardware do sistema\relax }}{37}{figure.caption.19}
+\contentsline {figure}{\numberline {11}{\ignorespaces Logotipo Kinect\relax }}{38}{figure.caption.20}
+\contentsline {figure}{\numberline {12}{\ignorespaces Kinect 2.0\relax }}{38}{figure.caption.21}
+\contentsline {figure}{\numberline {13}{\ignorespaces Logotipo Particle\relax }}{39}{figure.caption.22}
+\contentsline {figure}{\numberline {14}{\ignorespaces Particle Photon\relax }}{39}{figure.caption.23}
+\contentsline {figure}{\numberline {15}{\ignorespaces Logotipo Raspberry Pi\relax }}{41}{figure.caption.24}
+\contentsline {figure}{\numberline {16}{\ignorespaces Raspbery Pi Modelo B vers\IeC {\~a}o 3\relax }}{41}{figure.caption.25}
+\contentsline {figure}{\numberline {17}{\ignorespaces Logo da linguagem Java\relax }}{42}{figure.caption.26}
+\contentsline {figure}{\numberline {18}{\ignorespaces Logo Apache HTTP Server\relax }}{45}{figure.caption.27}
+\contentsline {figure}{\numberline {19}{\ignorespaces Diagrama de Gantt do sistema \relax }}{47}{figure.caption.28}
+\contentsline {figure}{\numberline {20}{\ignorespaces Kanban do projeto usando Trello \relax }}{48}{figure.caption.35}
+\contentsline {figure}{\numberline {21}{\ignorespaces Visual Studio 2015 IDE \relax }}{49}{figure.caption.36}
+\contentsline {figure}{\numberline {22}{\ignorespaces Editor de texto GNU NANO do Raspberry Pi \relax }}{50}{figure.caption.37}
+\contentsline {figure}{\numberline {23}{\ignorespaces Particle IDE \relax }}{51}{figure.caption.38}
+\contentsline {figure}{\numberline {24}{\ignorespaces Garra do bra\IeC {\c c}o rob\IeC {\'o}tico \relax }}{53}{figure.caption.39}
+\contentsline {figure}{\numberline {25}{\ignorespaces Coordenadas X-Y para todos os valores de theta1 e theta2 \relax }}{54}{figure.caption.40}
+\contentsline {figure}{\numberline {26}{\ignorespaces Coordenadas X-Y-Z para todos os valores de theta1, theta2 e theta3 \relax }}{54}{figure.caption.41}
+\contentsline {figure}{\numberline {27}{\ignorespaces Coordenadas X-Y-Z para todos os valores de theta1, theta2, theta3 e theta4 \relax }}{55}{figure.caption.42}
+\contentsline {figure}{\numberline {28}{\ignorespaces Imagem obtida pelas c\IeC {\^a}meras estereosc\IeC {\'o}picas usando mjpg-streamer\relax }}{56}{figure.caption.43}
+\contentsline {figure}{\numberline {29}{\ignorespaces Montagem das c\IeC {\^a}meras estereosc\IeC {\'o}picas\relax }}{56}{figure.caption.44}
+\contentsline {figure}{\numberline {30}{\ignorespaces \IeC {\'O}culos de realidade virtual com destaque para o girosc\IeC {\'o}pio externo\relax }}{57}{figure.caption.45}
+\contentsline {figure}{\numberline {31}{\ignorespaces Imagem obtida pelas c\IeC {\^a}meras estereosc\IeC {\'o}picas\relax }}{58}{figure.caption.46}
+\contentsline {figure}{\numberline {32}{\ignorespaces Captura de \IeC {\^a}ngulos do bra\IeC {\c c}o humano usando Visual C\# e Kinect\relax }}{59}{figure.caption.47}
+\contentsline {figure}{\numberline {33}{\ignorespaces Teste do motor da base do bra\IeC {\c c}o\relax }}{59}{figure.caption.48}
+\contentsline {figure}{\numberline {34}{\ignorespaces Teste de integra\IeC {\c c}\IeC {\~a}o\relax }}{60}{figure.caption.49}

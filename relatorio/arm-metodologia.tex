@@ -48,41 +48,40 @@
 	
 	
 	% ---
-	\subsection{Cronograma}\label{subsec-cronograma}
+	\section{Programas e IDEs}\label{sec-requisitos}
 	% ---
+	Esta seção apresenta os principais programas e IDEs (Integrated Development Environment) utilizados durante o desenvolvimento de cada componente do sistema proposto.
+		\subsection{Visual Studio 2015}\label{subsec-VSIDE}
+		A aplicação para Kinect foi feita usando-se o programa Visual Studio 2015.\par
+		O Visual Studio é a IDE usada pelo Kinect SDK da Microsoft para o desenvolvimento de aplicações Kinect, e permite elaborar o aplicativo e facilmente verificar os seus erros. É também a 
+		Possui inúmeros exemplos de código de aplicações em C\#, C++ e Visual Basic que também auxiliam no desenvolvimento de uma aplicação.
+		\begin{figure}[h!]
+		\caption{\label{fig_VSIDE} Visual Studio 2015 IDE }
+		\begin{center}
+			\includegraphics[width=\textwidth]{VSIDE.png}	
+		\end{center}
+		\legend{Fonte: Autor}
+		\end{figure}
 	
-	O cronograma do projeto foi planejado a partir dos pacotes de trabalho definidos na Estrutura Analítica de Projeto. Os participantes então fizeram reuniões para estimar o tempo, com a aplicação dessas estimativas a um calendário, considerando ainda as datas de entrega oficiais da disciplina. Com todas as estimativas feitas, o projeto tem a primeira e segunda fase com duração até o fim de Julho, com intuito de adiantar tanto a documentação quanto a implementação, como pode-se observar no diagrama de Gantt  \autoref{fig_gantt} abaixo.
 	
-	
-	% ---
-	\subsection{Requisitos}\label{subsec-requisitos}
-	% ---
-	
-	Os requisitos foram divididos primeiramente em funcionais e não-funcionais. Além disso, existem outras divisões relacionadas a hardware, software, estética e módulos do sistema. Para cada requisito foi dado um peso, conforme avaliação da relevância deste requisito para este projeto, de modo que no topo da árvore haja uma soma equivalente a 1.
-	
-	% ---
-	\subsubsection{Requisitos Funcionais}\label{subsubsec-requisitos-func}
-	% ---
-	
-	\paragraph{Requisitos de hardware} 
-	
-	É importante observar que estes dividem-se entre a lamparina, que serve de ponto de acesso, e o módulo de celular, com pesos iguais entre os dois, já que a comunicação é bilateral e ambos têm importância equivalente. Há requisitos em comum entre esses subsistemas:
-	
+		\subsection{Raspberry Pi}\label{subsec-raspIDE}
+			A configuração do servidor HTTP Apache foi escrita utilizando-se o editor de texto GNU NANO, que já vem pré-instalado no Raspberry Pi. A escolha se deu pela simplicidade da estrutura do arquivo de configuração, que não demandava grandes funcionalidades.
+			\begin{figure}[h!]
+		\caption{\label{fig_raspIDE} Editor de texto GNU NANO do Raspberry Pi }
+		\begin{center}
+			\includegraphics[width=\textwidth]{raspIDE.png}	
+		\end{center}
+		\legend{Fonte: Autor}
+	\end{figure}
 
-	\paragraph{Requisitos de software} 
-	Dividem-se entre a lamparina, o módulo de celular e o aplicativo, utilizado para receber e enviar dados para este módulo. Existem requisitos que são complementares às funções de hardware, porém correspondentes às soluções de software adotadas, como a implementação da norma IEEE 802.15.7 e a comunicação full-duplex um a um. Além destes, existem os requisitos de software comuns tanto à lamparina, ou Access Point Li-Fi, como ao módulo de telefone:
+	\subsection{Particle IDE}\label{subsec-particleIDE}
+	A Programação das placas Photon se deu pelo uso da Particle IDE, ambiente próprio para a programação das mesmas e que pode ser acessado através de um browser, sendo a tradução e envio do código às placas feito via nuvem própria.
+			\begin{figure}[h!]
+		\caption{\label{fig_particleIDE} Particle IDE  }
+		\begin{center}
+			\includegraphics[width=\textwidth]{ParticleIDE.png}	
+		\end{center}
+		\legend{Fonte: Autor}
+	\end{figure}
 	
-
-	\subsubsection{Requisitos Não-Funcionais}\label{subsubsec-requisitos-nfunc}
-	
-
-
-	
-	\paragraph{Conclusão}
-	
-
-	\section{Software}\label{sec-software}
-	% ---
-	
-	Explica as escolhas feitas no aspecto do software do projeto.
 	

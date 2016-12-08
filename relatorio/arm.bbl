@@ -5,6 +5,10 @@
 \providecommand{\abntbstabout}[1]{}
 \abntbstabout{v-1.9.6 }
 
+\bibitem[]{mpu6050}
+\abntrefinfo{nada}{NADA}{a}
+{DEBRA.}
+
 \bibitem[Aleotti, Skoglund e Duckett]{wearable}
 \abntrefinfo{Aleotti, Skoglund e Duckett}{ALEOTTI; SKOGLUND; DUCKETT}{}
 {ALEOTTI, J.; SKOGLUND, A.; DUCKETT, T. Gesture controlled mobile robotic arm
@@ -21,19 +25,18 @@ Dispon{\'\i}vel em:
   \url{http://www.robotics.org/content-detail.cfm/Industrial-Robotics-Industry-Insights/Robotics-in-Security-and-Military-Applications/content\_id/3112}.
   Acesso em: 6 mar 2016.}
 
-\bibitem[Chaniotakis e Cory 2006]{comparator-ampop-lecture}
-\abntrefinfo{Chaniotakis e Cory}{CHANIOTAKIS; CORY}{2006}
-{CHANIOTAKIS; CORY. \emph{Operational Amplifier Circuits Comparators and
-  Positive Feedback}. 2006.
-Dispon{\'\i}vel em:
-  \url{https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-071j-introduction-to-electronics-signals-and-measurement-spring-2006/lecture-notes/24\_op\_amps3.pdf}.
-  Acesso em: 16 nov 2016.}
-
 \bibitem[CSA 2011]{uses-arm}
 \abntrefinfo{CSA}{CSA}{2011}
 {CSA. \emph{Uses for Robotic Arm Technologyi}. Canadian Space Agency, 2011.
 Dispon{\'\i}vel em: \url{http://www.asc-csa.gc.ca/eng/canadarm/robotic.asp}.
   Acesso em: 22 abr 2016.}
+
+\bibitem[Debra]{debra}
+\abntrefinfo{Debra}{DEBRA}{}
+{DEBRA. \emph{Gyroscopes and Accelerometers on a Chip}.
+Dispon{\'\i}vel em:
+  \url{http://www.geekmomprojects.com/gyroscopes-and-accelerometers-on-a-chip/}.
+  Acesso em: 6 mar 2016.}
 
 \bibitem[Du et al. 2012]{kinect-based}
 \abntrefinfo{Du et al.}{DU et al.}{2012}
@@ -43,21 +46,15 @@ Dispon{\'\i}vel em:
   \url{http://cdn.intechopen.com/pdfs/37895/InTech-Markerless\_kinect\_based\_hand\_tracking\_for\_robot\_teleoperation.pdf}.
   Acesso em: 6 mar 2016.}
 
-\bibitem[Geisel 1990]{nasa-rs1}
-\abntrefinfo{Geisel}{GEISEL}{1990}
-{GEISEL, W.~A. Tutorial on reed-solomon error correction coding.
-NASA, 1990.
-Dispon{\'\i}vel em:
-  \url{http://ntrs.nasa.gov/archive/nasa/casi.ntrs.nasa.gov/19900019023.pdf}.
-  Acesso em: 19 mai 2016.}
+\bibitem[Foundation]{raspberry}
+\abntrefinfo{Foundation}{FOUNDATION}{a}
+{FOUNDATION, R.~P. \emph{Raspberry Pi main page}.
+Dispon{\'\i}vel em: \url{https://www.raspberrypi.org/}. Acesso em: 6 mar 2016.}
 
-\bibitem[Gupta 2015]{comparison-wifi}
-\abntrefinfo{Gupta}{GUPTA}{2015}
-{GUPTA, S. Research on li-fi technology\& comparison of li-fi/wi-fi.
-2015.
-Dispon{\'\i}vel em:
-  \url{http://www.ijarcsse.com/docs/papers/Volume\_5/6\_June2015/V5I6-0175.pdf}.
-  Acesso em: 6 mar 2016.}
+\bibitem[Foundation]{apache}
+\abntrefinfo{Foundation}{FOUNDATION}{b}
+{FOUNDATION, T.~A. \emph{Apache HTTP Server Project Main Site}.
+Dispon{\'\i}vel em: \url{https://httpd.apache.org/}. Acesso em: 6 mar 2016.}
 
 \bibitem[ICOR 2016]{datasheet-caliber}
 \abntrefinfo{ICOR}{ICOR}{2016}
@@ -66,20 +63,25 @@ Dispon{\'\i}vel em:
   \url{https://icor-b23.kxcdn.com/wp-content/uploads/2016/09/CALIBER\%C2\%AE-MK4-V2016.08.25.pdf}.
   Acesso em: 16 nov 2016.}
 
-\bibitem[IEEE 2011]{lifi-standard}
-\abntrefinfo{IEEE}{IEEE}{2011}
-{IEEE. \emph{802.15.7-2011 - IEEE Standard for Local and Metropolitan Area
-  Networks--Part 15.7: Short-Range Wireless Optical Communication Using Visible
-  Light}.
-[S.l.], 2011. Dispon{\'\i}vel em:
-  \url{http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=6016195}. Acesso
-  em: 6 mar 2016.}
+\bibitem[JPL]{nasa-project}
+\abntrefinfo{JPL}{JPL}{}
+{JPL. \emph{NASA's JPL maneuvers a robot arm with Oculus Rift and Kinect 2,
+  points to more immersive space missions}.
+Dispon{\'\i}vel em: \url{http://www.hi.jpl.nasa.gov/projects/}. Acesso em: 6
+  mar 2016.}
 
-\bibitem[Instruments 2007]{datasheet-opa380}
-\abntrefinfo{Instruments}{INSTRUMENTS}{2007}
-{INSTRUMENTS, T. \emph{Precision, High Speed Transimpedance Amplifier}.
-[S.l.], 2007. Dispon{\'\i}vel em:
-  \url{http://www.ti.com/lit/ds/symlink/opa380.pdf}. Acesso em: 16 nov 2016.}
+\bibitem[Microsoft]{microsoft-kinect}
+\abntrefinfo{Microsoft}{MICROSOFT}{a}
+{MICROSOFT. \emph{Microsoft Kinect main page}.
+Dispon{\'\i}vel em: \url{https://developer.microsoft.com/en-us/windows/kinect}.
+  Acesso em: 6 mar 2016.}
+
+\bibitem[Microsoft]{visualc}
+\abntrefinfo{Microsoft}{MICROSOFT}{b}
+{MICROSOFT. \emph{Visual C sharp}.
+Dispon{\'\i}vel em:
+  \url{https://msdn.microsoft.com/pt-BR/library/kx37x362.aspx}. Acesso em: 6
+  mar 2016.}
 
 \bibitem[Mitsantisuk, Katsura e Ohishi]{joystick}
 \abntrefinfo{Mitsantisuk, Katsura e Ohishi}{MITSANTISUK; KATSURA; OHISHI}{}
@@ -89,16 +91,21 @@ Dispon{\'\i}vel em:
 Dispon{\'\i}vel em:
   \url{https://www.jstage.jst.go.jp/article/jcmsi/1/6/1\_6\_452/\_pdf}.}
 
-\bibitem[Sedra/Smith 2014]{microelectronics-circuits}
-\abntrefinfo{Sedra/Smith}{SEDRA/SMITH}{2014}
-{SEDRA/SMITH. \emph{Microelectronics Circuits}. 7. ed. [S.l.]: Oxford, 2014.
-ISBN 0199339139.}
+\bibitem[Oracle]{java}
+\abntrefinfo{Oracle}{ORACLE}{}
+{ORACLE. \emph{Java main page}.
+Dispon{\'\i}vel em: \url{https://www.java.com/en/}. Acesso em: 6 mar 2016.}
 
-\bibitem[Vishay 2011]{datasheet-irlz14}
-\abntrefinfo{Vishay}{VISHAY}{2011}
-{VISHAY. \emph{IRLZ14, SiHLZ14 Datasheet}.
-[S.l.], 2011. Dispon{\'\i}vel em:
-  \url{http://www.vishay.com/docs/91325/sihlz14.pdf}. Acesso em: 16 nov 2016.}
+\bibitem[Particle]{Particle}
+\abntrefinfo{Particle}{PARTICLE}{}
+{PARTICLE. \emph{Particle main page}.
+Dispon{\'\i}vel em: \url{http://particle.io}. Acesso em: 6 mar 2016.}
+
+\bibitem[Stöveken]{mjpg}
+\abntrefinfo{Stöveken}{STöVEKEN}{}
+{STöVEKEN, T. \emph{mjpg-streamer repository}.
+Dispon{\'\i}vel em: \url{https://github.com/jacksonliam/mjpg-streamer}. Acesso
+  em: 6 mar 2016.}
 
 \bibitem[Wang et al. 2005]{tracker-based}
 \abntrefinfo{Wang et al.}{WANG et al.}{2005}

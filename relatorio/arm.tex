@@ -97,7 +97,7 @@
 % ---
 % Informações de dados para CAPA e FOLHA DE ROSTO
 % ---
-\titulo{Teleoperação de braço robótico por rastreamento de movimentos e imersão visual}
+\titulo{Imersão em ambiente remoto através da operação de braço robótico por rastreamento de movimentos sem marcadores e sistema de câmeras estereoscópicas}
 \autor{Daniel Noriaki Kurosawa}
 \local{São Paulo}
 \data{2016}
@@ -193,7 +193,19 @@
 	% Agradecimentos
 	% ---
 	\begin{agradecimentos}
-		Agradecimentos aqui.	
+	Agradeço imensamente:\par
+	À instituição de ensino e todos os seus docentes que não só contribuiram para minha formação acadêmica, mas que através de lições e ensinamentos, contribuiram para minha formação como cidadão.\par
+	Ao orientador, Prof. Dr. Reginaldo Arakaki e ao co-orientador  Prof. Dr Fuad Kassab Junior, por todo o apoio e paciência. O bom humor e a confiança depositados foram foram grande fonte de motivação durante o decorrer deste trabalho.\par
+	Aos engenheiros Marcelo Angelo Pita e Leandro Rodrigues de Souza, por toda
+	orientação e o auxílio prestado na implementação do projeto.\par
+	À Camila Aya Uratsuka, por contribuir com as figuras que ilustram este trabalho.\par
+	À André Hashimoto Oku, por fornecer hardware usado durante a fase de testes deste projeto.\par
+
+	À minha família pelo amor, incentivo e apoio incondicional.\par
+	Por fim aos amigos, pelos constantes incentivos.	\par
+	
+
+	
 	\end{agradecimentos}
 	% ---
 	
@@ -203,9 +215,9 @@
 	\begin{epigrafe}
 		\vspace*{\fill}
 		\begin{flushright}
-			\textit{``In a dark place we find ourselves,\\
-				and a little more knowledge	lights our way.\\
-				(Yoda, Episode 3: Revenge of the Sith)}
+			\textit{``The only difference between screwing around and science ,\\
+				...is writing it down."\\
+				(Adam Savage, Mythbusters)}
 		\end{flushright}
 	\end{epigrafe}
 	% ---
@@ -244,30 +256,38 @@
 	% inserir lista de abreviaturas e siglas
 	% ---
 	\begin{siglas}
-		\item[ADC] Analog Digital Converter
-		\item[EAP] Estrutura Analítica de Projeto
-		\item[FPGA] Field-Programmable Gate Array
-		\item[GF] Galois Field
+		\item[CSA] Canadian Space Agency
+		\item[ANFIS] Adaptive Neuro-Fuzzy Inference System 
+		\item[PID] Controlador Proporcional-Integrativo-Derivativo
+		\item[IoT] Internet of Things
 		\item[IP] Internet Protocol	
-		\item[LED] Light Emitting Diode
-		\item[MAC] Media Access Control
-		\item[RS] Reed Solomon
+		\item[RM-ODP] Reference Model of Open Distributed Processing 
+		\item[MPU] Motion Processing Unit
+		\item[I2C] Inter-Integrated Circuit
+		\item[PIV]  Controlador proporcional-integrativo-velocidade
+		\item[WiFi] Wireless Fidelity
 		\item[USB] Universal Serial Bus
-		\item[UART] Universal Asynchronous Receiver/Transmitter
-		\item[FET] Field Effect Transistor
-		\item[FLP] Fast Locking Pattern
-		\item[TDP] Topology Dependant Pattern
-		\item[PHR] PHY Header
-		\item[SHR] Synchronization Header
-		\item[PSDU] PHY Service Data Unit
-		\item[MOSFET] Metal Oxide Semiconductor Field Effect Transistor
-		\item[MCS ID] M
-		\item[RLL] Run Length Limited
-		\item[DC] Direct Current
-		\item[AC] Alternating Current
-		\item[TTL] Transistor-Transistor Logic
-		\item[VPAN] Visible-Light Communication Personal Area Network
-		\item[TCP] Transmission Control Protocol
+		\item[HTML] Hypertext Transfer Protocol 
+		\item[TCP-IP] Transmission Control Protocol - Internet Protocol
+		\item[UDP] User Datagram Protocol
+		\item[IDE] Integrated Development Environment
+		\item[PWM] Pulse Width Modulation
+		\item[JPEG] Joint Photographic Experts Group
+		\item[CI]  Circuito Integrado
+		\item[MJPG] Motion JPEG
+		\item[RAM] Random Access Memory
+		\item[CPU] Central Processing Unit 
+		\item[ADC] Analog Digital Converter
+		\item[PC] Personal Computer 
+		\item[FIFO]  First In, First Out
+		\item[J2ME] Java 2 Plataform, Micro Edition
+		\item[J2SE] Java 2 Platform, Standard Edition
+		\item[J2EE]  Java 2 Platform, Enterprise Edition
+		\item[JVM] Java Virtual Machine
+		\item[SMC] Simple Managed C
+		\item[JPL] Jet Propulsion Laboratory
+		\item[NASA] National Aerospace Agency
+		\item[VR] Virtual Reality
 	\end{siglas}
 	% ---
 	
@@ -326,7 +346,8 @@
 	% Prepara pdf para iniciar o bookmark na raiz
 	% ----------------------------------------------------------
 	\phantompart
-	
+		% ----------------------------------------------------------
+
 	% ----------------------------------------------------------
 	% Conclusão
 	% ----------------------------------------------------------

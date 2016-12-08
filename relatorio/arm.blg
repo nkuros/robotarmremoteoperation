@@ -2,7 +2,7 @@ This is BibTeX, Version 0.99dThe top-level auxiliary file: arm.aux
 A level-1 auxiliary file: ficha-catalografica.aux
 A level-1 auxiliary file: arm-resumos.aux
 A level-1 auxiliary file: arm-introducao.aux
-A level-1 auxiliary file: arm-ideiasiniciais.aux
+A level-1 auxiliary file: arm-especificacao.aux
 A level-1 auxiliary file: arm-metodologia.aux
 A level-1 auxiliary file: arm-execucao.aux
 A level-1 auxiliary file: arm-conclusao.aux
@@ -31,12 +31,30 @@ I was expecting a `,' or a `}'---line 84 of file referencias-arm.bib
  :  Urlaccessdate = {6 mar 2016},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
+Warning--entry type for "mpu6050" isn't style-file defined
+--line 131 of file referencias-arm.bib
+I was expecting a `,' or a `}'---line 132 of file referencias-arm.bib
+ :  
+ :  title        = {MPU-6000 and MPU-6050 Product Specification Revision 3.4},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
 Warning--I didn't find a database entry for "cisco-forecast"
-Warning--I didn't find a database entry for "vision"
-Warning--I didn't find a database entry for "what-is-lifi"
+Warning--para ordenar, precisa dos campos author, organization, editor, title ou key in mpu6050
+`title' is a missing field, not a string, for entry mpu6050
+while executing---line 2146 of file abntex2-alf.bst
+Warning--campo year vazio ou faltando em mpu6050
+Warning--campo year vazio ou faltando em debra
+Warning--campo year vazio ou faltando em raspberry
+Warning--campo year vazio ou faltando em apache
+Warning--campo year vazio ou faltando em nasa-project
+Warning--campo year vazio ou faltando em microsoft-kinect
+Warning--campo year vazio ou faltando em visualc
+Warning--campo year vazio ou faltando em java
+Warning--campo year vazio ou faltando em Particle
+Warning--campo year vazio ou faltando em mjpg
 +---------------------------------------------------------+
 | Estilo bibliográfico abntex2-alf.bst versão v-1.9.6           |
 | Em caso de dúvidas ou problemas com este estilo procure |
 | http://www.abntex.net.br/                               |
 +---------------------------------------------------------+
-(There were 4 error messages)
+(There were 6 error messages)

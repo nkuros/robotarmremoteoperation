@@ -7,26 +7,38 @@
 % resumo em português
 \setlength{\absparsep}{18pt} % ajusta o espaçamento dos parágrafos do resumo
 \begin{resumo}
-	Segundo a \cite{cisco-forecast}, o resumo deve ressaltar o
-	objetivo, o método, os resultados e as conclusões do documento. A ordem e a extensão
-	destes itens dependem do tipo de resumo (informativo ou indicativo) e do
-	tratamento que cada item recebe no documento original. O resumo deve ser
-	precedido da referência do documento, com exceção do resumo inserido no
-	próprio documento. (\ldots) As palavras-chave devem figurar logo abaixo do
-	resumo, antecedidas da expressão Palavras-chave:, separadas entre si por
-	ponto e finalizadas também por ponto.
+	Este trabalho estuda a interação imersiva em um ambiente remoto através do uso de estereoscopia e de operação ótica sem marcadores de um braço robótico.
 	
-	\textbf{Palavras-chave}: latex. abntex. editoração de texto.
+	Para tal objetivo, foi definido um projeto cuja execução gerou um sistema composto de:
+	\begin{itemize}
+		\item Microsoft Kinect, que envia os dados capturados a um braço robótico através de um servidor.
+		\item Um sistema de câmeras estereoscópicas que envia suas imagens a um servidor, que podem ser acessadas remotamente por um óculos de realidade virtual ou qualquer dispositivo que tenha um browser compatível instalado.
+		\item Um sistema de captura de movimentos da cabeça do usuário via giroscópio, que envia estes dados remotamente a um conjunto de motores localizados na base da câmera, de modo a sincronizar os movimentos da cabeça do usuário a visão das câmeras.		
+	\end{itemize}
+
+	 Os resultados finais indicam um grande espaço para o desenvolvimento de projetos deste tipo em aplicações futuras, apesar da necessidade de melhora de precisão para usos comerciais.
+	
+	\textbf{Palavras-chave}: Internet of Things. Microsoft Kinect. Estereoscopia. Braço Robótico. IoT. 
 \end{resumo}
 
 % resumo em inglês
 \begin{resumo}[Abstract]
 	\begin{otherlanguage*}{english}
-		This is the english abstract.
-		
+		This work studies the immersive interaction with a remote enviroment by using stereoscopy and markerless operation of a robotic arm.
+
+
+Para tal objetivo, foi definido um projeto cuja execução gerou um sistema composto de:
+which create a system that comprises:
+\begin{itemize}
+	\item A Microsoft Kinect, which sends captured data to a robot controller via server.
+	\item A stereoscopic camera system, which sends its images to a server, which are in turn accessed by VR Glasses or any device with a compatible browser installed.
+	\item A gyroscope based head-tracking system, which sends user's head pan/tilt data to motors located in the camera system's base, allowing the cameras to move in synchronization with the user's head movements.		
+\end{itemize}
+Final results indicate great applicability for this approach in future uses. In it's current state however, this approach lacks precision necessary for commercial use.
+	
 		\vspace{\onelineskip}
 		
 		\noindent 
-		\textbf{Keywords}: latex. abntex. text editoration.
+		\textbf{Keywords}: Internet of Things. Microsoft Kinect. Stereoscopy.  Robotic Arm. IoT. 
 	\end{otherlanguage*}
 \end{resumo}
